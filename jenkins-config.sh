@@ -3,7 +3,7 @@ app_tag=`git ls-remote https://github.com/javahometech/node-app HEAD | awk '{pri
 docker_app="kammana/nodejenkins:$app_tag"
 docker build -t $docker_app .
 
-docker login -u kammana -p yourpassword 
+docker login -u sreenagandla -p Welcome@0549
 
 docker push $docker_app
 
